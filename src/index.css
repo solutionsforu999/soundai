@@ -1,0 +1,237 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+* {
+    font-family: 'Rubik';
+}
+
+body,
+html {
+    background-color: black;
+    min-height: 100%;
+}
+
+.navbar-brand {
+    font-size: xx-large;
+}
+
+.navbar-collapse {
+    margin-left: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem !important;
+}
+
+/* dropdown show */
+ul.dropdown-menu {
+    z-index: 1;
+}
+
+.dropdown-item.active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: transparent;
+    text-shadow: 0px 2px 1px grey;
+    color: burlywood !important;
+}
+
+.dropdown-item:focus {
+    background-color: transparent;
+}
+
+div.home,
+.intro,
+.first-section,
+.second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(70vh);
+
+
+}
+
+.intro>h1,
+.second-section h1 {
+    margin: 3rem 0;
+    text-align: center;
+    color: white;
+    font-weight: lighter !important;
+    font-size: xx-large;
+}
+
+.intro>h2,
+.first-section>h2,
+.second-section h2,
+.third-section h2 {
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.intro>p,
+.first-section>p,
+.second-section p {
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter !important;
+    text-transform: uppercase;
+}
+
+.intro>button,
+.first-section>button,
+div.containing div button {
+    max-width: 15rem;
+    border: none;
+    background-color: bisque;
+    color: black;
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    transition: 0.2s;
+
+}
+
+.intro>button:hover,
+.first-section>button:hover,
+div.containing div button:hover {
+    box-shadow: 0px 1px 1px 1px grey;
+    background-color: burlywood;
+    color: white;
+}
+
+.intro>button:active,
+.first-section>button:active,
+div.containing div button:active {
+    transform: translateY(4px);
+}
+
+
+
+
+div.certifs {
+    position: relative;
+    bottom: -5rem;
+    border-radius: 10px;
+    min-width: 70%;
+    min-height: 14rem;
+    background-color: rgb(225, 195, 24);
+    color: white;
+    border: 3px solid white;
+    box-shadow: 1px 0px 2px 1px white;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.Carousel__RailWrapper-sc-hyhecw-1.bhHnmT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.first-section {
+    max-width: 90%;
+    margin-top: 7rem;
+}
+
+div.home,
+.intro,
+.first-section,
+.second-section {
+    max-width: 90%;
+}
+
+div.containing {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+div.containing div {
+    flex: 1 1 350px;
+
+}
+
+div.containing div img {
+    transition: transform 0.3s;
+    transition-delay: 0.1s;
+}
+
+div.containing div img:hover {
+    box-shadow: 1px 1px 0px 1px grey;
+    transform: translateY(-6px);
+}
+
+.d-hidden {
+    -webkit-animation: d-hidden 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) both;
+    animation: d-hidden 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) both;
+}
+
+.d-flex {
+    -webkit-animation: d-flex 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) both;
+    animation: d-flex 0.5s cubic-bezier(0.770, 0.000, 0.175, 1.000) both;
+}
+
+@-webkit-keyframes d-hidden {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes d-hidden {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+}
+
+@-webkit-keyframes d-flex {
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes d-flex {
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+}
