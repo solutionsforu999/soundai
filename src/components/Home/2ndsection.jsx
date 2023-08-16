@@ -1,9 +1,9 @@
 import { useInView } from "react-intersection-observer";
 
 const SecondSection = () => {
-    const { ref:secondsection, inView:introisVisible } = useInView({delay: 150});
+    const { ref: secondsection, inView: introisVisible } = useInView({ delay: 150 });
     return (
-        <div ref={secondsection} className={introisVisible?"second-section d-flex":"second-section d-hidden"}>
+        <div ref={secondsection} className={introisVisible ? "second-section div-in" : "second-section div-out"}>
             <h2>Get creative with Murf Studio</h2>
             <div className="containing">
                 <div>
@@ -19,7 +19,7 @@ const SecondSection = () => {
 
                 </div>
             </div>
-            <img width={'70%'} alt="bubble" src={'https://uploads-ssl.webflow.com/6215d56ae85caa0a3026a433/634f9a0e6f66afbd288717a5_Capture%20the%20right%20tone-p-500.webp'} alt='efs' />
+            <img width={'100%'} alt="bubble" src={'https://uploads-ssl.webflow.com/6215d56ae85caa0a3026a433/634f9a0e6f66afbd288717a5_Capture%20the%20right%20tone-p-500.webp'} alt='efs' />
             <h2>All-in-one AI voice generator </h2>
             <p>Play with pitch, punctuations and emphasis to make the AI voices carry your message however you like.</p>
             <div className="containing">

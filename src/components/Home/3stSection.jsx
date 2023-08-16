@@ -12,7 +12,7 @@ const ThirdSection = () => {
     // const [cards,setCards]= useState();
     return (
 
-        <div ref={third} className={thirdiVisible ? `third-section d-block` : `third-section d-hidden`}>
+        <div ref={third} className={thirdiVisible ? `third-section div-in` : `third-section div-out`}>
             <h2>Blog</h2>
             
             <div className="containing">
